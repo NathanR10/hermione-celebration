@@ -1,0 +1,24 @@
+{
+  "name": "hermione-celebration",
+  "version": "0.1.0",
+  "description": "Brooms goes wroom!",
+  "main": "dist/index.js",
+  "style": "dist/index.css",
+  "scripts": {
+    "prepublish": "rm -rf ./dist && npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src --out-dir dist && cp src/index.css dist/ && mkdir -p dist/assets && cp src/assets/* dist/assets/",
+    "babel-version": "babel --version"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NathanR10/hermione-celebration.git"
+  },
+  "keywords": [
+    "animation"
+  ],
+  "author": "NathanR10",
+  "license": "ISC",
+  "homepage": "https://github.com/NathanR10/hermione-celebration#readme",
+  "private": true
+}
